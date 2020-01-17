@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import CardInfo from "./components/CardInfo";
+import SearchForm from "./components/SearchForm";
 
 import "./App.css";
 
@@ -39,18 +40,10 @@ class App extends React.Component {
         <header>
           <h1>Women's World Cup players </h1>
         </header>
-        <div className="search">
-          <form>
-            <input
-              id="name"
-              onChange={this.handleChanges}
-              value={this.state.query}
-              placeholder="Search..."
-              type="text"
-              name="textfield"
-            />
-          </form>
-        </div>
+        <SearchForm
+          handleChanges={this.handleChanges}
+          value={this.state.query}
+        />
         <CardInfo playerInfo={this.state.playerInfo} />
       </div>
     );
