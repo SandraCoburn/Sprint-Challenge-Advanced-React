@@ -2,8 +2,10 @@ import React from "react";
 import axios from "axios";
 import CardInfo from "./components/CardInfo";
 import SearchForm from "./components/SearchForm";
+import NavBar from "./components/NavBar";
 
 import "./App.css";
+import Navbar from "./components/NavBar";
 
 class App extends React.Component {
   constructor() {
@@ -38,8 +40,9 @@ class App extends React.Component {
     return (
       <div>
         <header>
-          <h1>Women's World Cup players </h1>
+          <NavBar />
         </header>
+        <h1>Women's World Cup players </h1>
         <SearchForm
           handleChanges={this.handleChanges}
           value={this.state.query}
