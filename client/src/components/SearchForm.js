@@ -2,9 +2,7 @@ import React from "react";
 import { useForm } from "../hooks/useForm";
 
 export default function SearchForm(props) {
-  const [values, clearForm] = useForm("player", {
-    username: ""
-  });
+  const [values, clearForm] = useForm("player", { username: "" });
   return (
     <div className="search">
       <form>
