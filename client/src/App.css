@@ -204,8 +204,11 @@ header img {
   text-align: center;
 }
 
-header p {
-  font-size: 48px;
+.text {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .cards {

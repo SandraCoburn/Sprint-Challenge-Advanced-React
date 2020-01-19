@@ -5,7 +5,6 @@ import SearchForm from "./components/SearchForm";
 import NavBar from "./components/NavBar";
 
 import "./App.css";
-import Navbar from "./components/NavBar";
 
 class App extends React.Component {
   constructor() {
@@ -43,6 +42,10 @@ class App extends React.Component {
           <NavBar />
         </header>
         <h1>Women's World Cup players </h1>
+        <p className="text">
+          Players ranked by search interest from Google Trends, June-July 2019,
+          worldwide.
+        </p>
         <SearchForm
           handleChanges={this.handleChanges}
           value={this.state.query}
